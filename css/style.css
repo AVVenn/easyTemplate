@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    font-size: 18px;
+    background-color: #787129;
+    background-image: url(/image/background.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    max-width: 1500px;
+    min-width: 500px;
+    margin: 0 auto;
+} 
+
+.container {
+    width: 100%;
+}
+
+
+.header, .footer {
+    width: 100%;
+    min-height: 80px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    font-family: 'Roboto', sans-serif;
+    color: rgb(192, 134, 25);
+}
+
+.logo {
+    float: left;
+    margin-right: 5%;
+}
+
+.menu {
+    min-width: 80%;
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    padding-right: 25px;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-size: 23px;  
+    line-height: 80px;
+    transition-property: color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: rgb(136, 38, 16);
+}
+
+.dropdown {
+    position: absolute;
+    top: 80%;
+    display: none;
+}
+
+.dropdown li a {
+    font-size: 20px;
+    line-height: 30px;
+    width: 250px;
+    background-color:rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border: 2px solid rgb(192, 134, 25);
+    border-radius: 0px 15px 10px;
+    padding: 5px;
+}
+
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+.tel {
+    margin-left:5%;
+    float: left;
+    display: block;
+    overflow: hidden;
+    max-height: 80px;
+}
+
+.tel ul {
+    list-style: none;
+}
+
+.tel ul li {
+    line-height: 80px;
+    animation: change 16s  infinite;
+}
+
+@keyframes change {
+    0% { transform: translateY(0);}
+    20% {transform: translateY(-20%);}
+    40% { transform: translateY(-40%)}
+    60% { transform: translateY(-60%);}
+    80% { transform: translateY(-80%);}
+    100% { transform: translateY(0);}
+}
+
+.phones a{
+    text-decoration: none;
+    font-size: 25px;
+    color: inherit;
+}
+
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.center {
+    width: 100%;
+    margin: 2% 1% 2% 2%;
+}
+
+.left__side {
+    float:left;
+    min-width:20%;
+    text-align:left;
+    margin-left: 1%;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.navigation{
+    list-style: none;
+    list-style-image: url(../image/title.png);
+    list-style-position: inside;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.navigation ul li a {
+    color: rgb(192, 134, 25);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: .5s;
+    
+}
+
+ul li a:hover {
+    color:#AF2C1A;
+}
+
+.tellme {
+position: fixed;
+right: 0px;
+}
+
+.main {
+    max-width: 74%;
+    float: left;
+    font-family: 'Balsamiq Sans', serif;
+    text-align: justify;
+    color: orange;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-indent: 2em;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.main a{
+    text-decoration: none;
+    color:inherit;
+    margin: 0 auto;
+}
+
+.main a:hover {
+    color:#AF2C1A;
+}
+p {
+    margin: 10px;
+}
+
+h1{
+    color: black;
+    font-size: 1.3em;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-variant: bold;
+    background-color: rgb(192, 134, 25);
+    
+}
+
+h2, h3, #id
+{
+    color: black;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-variant: bold;
+    background-color: rgb(192, 134, 25);
+}
+
+#up, #down {
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: .5s;
+}
+#up:hover,#down:hover {
+    color: red;
+}
+.margin {
+    margin-bottom: 15px;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.15em;
+    font-style: italic;
+    font-variant: small-caps;
+}  
+
+span:hover {
+    background-color:rgba(20, 83, 4, 0.946);
+}
+    
+p.small  {
+        font-size: 0.8em;
+}
+
+
+
+.menu2 {
+    text-align: center;
+    margin-left: 2%;
+    
+}
+
+.menu2 li {
+    float: left;
+    list-style: none;
+    padding-right: 25px;
+    position: relative;
+    line-height: 80px;
+}
+
+
+.menu2  li a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    font-size: 23px;
+    width: 280px;
+
+}
+
+.menu2 li a:hover {
+    text-decoration: underline;
+    color: rgb(136, 38, 16);
+}
+
+.dropdown2 {
+    position: absolute;
+    bottom: 80%;
+    display: none;
+    /* line-height: 30px;  ХРЕНЬ КАКАЕ-ТО!!!!!*/
+}
+
+.dropdown2 li a {
+    font-size: 20px;
+    width: 270px;
+    background-color:rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border: 2px solid rgb(192, 134, 25);
+    border-radius: 15px 10px 15px 0;
+    padding: 5px;
+}
+
+.menu2 li:hover .dropdown2 {
+    display: block;
+    font-size: 20px;
+}
+
+.social {
+    background-color: #C08619;
+    padding: 0 2%;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 40px;
+    min-height: 80px;
+}
+
+.social__link li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+
+
+.mevk a{
+    color: #2787F5;
+}
+
+.meinst a{
+    color: #CF2F62;
+}
+
+.mefacebook a{
+    color:#4064AC;
+
+}
+
+.metelegram a{
+    color: #27A2E3;
+}
+
+.meyoutube a{
+    color:#F70000;
+}
+
